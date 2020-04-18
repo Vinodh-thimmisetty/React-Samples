@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form Validator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="form" class="form" novalidate>
+        <h2>Register With US</h2>
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter username"
+            minlength="3"
+            maxlength="50"
+            required
+          />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+            required
+          />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter password"
+            minlength="5"
+            maxlength="20"
+            required
+          />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            name="password2"
+            id="password2"
+            placeholder="Enter password again"
+            required
+          />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="country">Country</label>
+          <select name="country" id="country" required>
+            <option value="">-</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+            <option value="USA">USA</option>
+          </select>
+          <small>Error Message</small>
+        </div>
+        <!-- <div class="form-control">
+          <label for="browsers">Favorite Browser</label>
+          <input list="browsers" name="browser" />
+          <datalist id="browsers">
+            <option value="Internet Explorer"> </option>
+            <option value="Firefox"> </option>
+            <option value="Chrome"> </option>
+            <option value="Opera"> </option>
+            <option value="Safari"> </option>
+          </datalist>
+          <small>Error Message</small>
+        </div> -->
+        <div class="form-control">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

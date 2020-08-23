@@ -2,6 +2,9 @@
 
 # dependencies
 expense-tracker/node_modules/**/*
+todo-list/node_modules/**/*
+web-forms/**/*
+d3-charts/**/*
 /.pnp
 .pnp.js
 

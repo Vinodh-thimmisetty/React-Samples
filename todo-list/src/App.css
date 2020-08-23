@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #898d91;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
